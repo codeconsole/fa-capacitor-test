@@ -1,0 +1,11 @@
+{
+  "appId": "APP_ID",
+  "appName": "APP_NAME",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}

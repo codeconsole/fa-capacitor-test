@@ -1,0 +1,31 @@
+{
+  "name": "capacitor-app",
+  "version": "1.0.0",
+  "description": "An Amazing Capacitor App",
+  "main": "index.js",
+  "keywords": [
+    "capacitor",
+    "mobile"
+  ],
+  "scripts": {
+    "xcode": "cap open ios",
+    "ios13": "vite build && npx cap run ios --target=$(npx cap run ios --list|grep \"iPhone 11 Pro\"| awk '{print $NF}')",
+    "ios": "vite build && npx cap run ios --target=$(npx cap run ios --list|tail -1| awk '{print $NF}')",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor-community/firebase-analytics": "latest",
+    "@capacitor/android": "latest",
+    "@capacitor/core": "latest",
+    "@capacitor/ios": "^4.5.0",
+    "@capacitor/splash-screen": "latest"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "latest",
+    "vite": "^2.9.13"
+  },
+  "author": "",
+  "license": "ISC"
+}
